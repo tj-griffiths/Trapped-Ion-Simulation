@@ -31,7 +31,7 @@ mode_com, mode_stretch = modes(chamber)
 
 
 # Analytic predictions:
-# ω_COM = ω_z (Coulumb shifts cacnel for in-phase motion)
+# ω_COM = ω_z (Coulumb shifts cancel for in-phase motion)
 # ω_stretch = √3 * ω_z (Coulumb adds restoring force for out-of-phase motion)
 
 ν_z = 1e6
@@ -115,8 +115,8 @@ ex_ion1_com = real.(expect(ionprojector(chamber, "D", 1), sol_com)) # Expectatio
 ex_ion2_com = real.(expect(ionprojector(chamber, "D", 2), sol_com)) # Expectation value of the D state population for ion 2 
 
 # Stretch Blue Sideband
-T_streth = 2π / (abs(η_ion1_stretch) * π/2) # Time for a full Rabi oscillation on Stretch mode
-tspan_stretch = 0:0.1:2*T_streth # Time span for simulation
+T_stretch = 2π / (abs(η_ion1_stretch) * π/2) # Time for a full Rabi oscillation on Stretch mode
+tspan_stretch = 0:0.1:2*T_stretch # Time span for simulation
 
 detuning!(laser, ν_stretch)
 h_stretch = hamiltonian(chamber, timescale = 1e-6, rwa_cutoff = 1e5)

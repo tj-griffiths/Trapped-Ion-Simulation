@@ -71,4 +71,4 @@ ylims!(0, 1)
 
 savefig("IonTrap/Results/Carrier_Rabi_Flopping.png")
 println("Saved plot to Carrier_Rabi_Flopping.png")
-println("Max Deviation from Analysic Curve: ", maximum(abs.(ex - analytic))) 
+println("Max Deviation from Analytic Curve: ", maximum(abs.(ex - analytic))) 
