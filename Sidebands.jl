@@ -87,8 +87,8 @@ ylabel!(p2, "Population in |D⟩")
 title!(p2, "Sideband Rabi Flopping from |n=1⟩")
 ylims!(p2, 0, 1)
 
-plot(p1, p2, layout = (1, 2) , size = (1000, 420))
-savefig("IonTrap/Sideband_Rabi_Flopping.png")
+plot(p1, p2, layout = (1, 2) , size = (1000, 420), left_margin = 8mm, bottom_margin = 8mm, top_margin = 5mm)
+savefig("IonTrap/Results/Sideband_Rabi_Flopping.png")
 println("Saved plot to Sideband_Rabi_Flopping.png")
 
 # Looking at the plot we see that the blue sideband only reaches ~ 0.27 population and fails to match the analytic curve's amplitude.
