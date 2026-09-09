@@ -136,8 +136,6 @@ the same universal sin²(πt) — the Lamb-Dicke regime's universality made visi
 
 ## Julia patterns learned along the way
 
-> **[REWRITE/TRIM IN YOUR OWN VOICE]** — keep the ones that genuinely stuck.
-
 - **Value-baking vs references:** `hamiltonian()` captures parameter values at
   call time; there is no live link back to the `Laser` object. The
   `detuning!()`-then-`hamiltonian()` ordering rule follows directly.
