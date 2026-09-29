@@ -73,7 +73,6 @@ println("Stretch η / COM η scaling:   ", round(abs(η_ion1_stretch)/abs(η_ion
         " (expect ν_z/ν_stretch scaling ~ ", round(√(ν_z/analytic_stretch), digits=4), ")")
 
 
-
 # Visualizing Mode Structure with Bar Chart
 
 # To see how much each ion participates in each mode, we extract the normalized eigenvector component b_{ik} by dividing out η_0
